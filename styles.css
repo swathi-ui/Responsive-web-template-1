@@ -1,0 +1,330 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    margin: 0px;
+    padding:0px;
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 5px;
+}
+.container{
+    width: 80%;
+    margin:auto;
+}
+nav ul li{
+    float:left;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding:10px;
+    /* font-size: 15px; */
+    font-size: 0.9375rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: black;
+    margin-right: 10px;
+}
+nav ul li a:hover{
+    background-color:#ccc;
+
+}
+header h3{
+    /* font-size: 15px; */
+    font-size:0.9375rem;
+    font-weight: 400;
+    /* line-height: 23px; */
+    line-height: 1.53rem;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    float:left;
+    
+}
+header nav{
+    float:right;
+    /* width:350px; */
+
+}
+div#headerfixed{
+    background-color: white;
+    width:100%;
+    height:9%;
+    position: fixed;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    box-shadow: 0px 0px 5px 3px #c6c6c6;
+    
+}
+header img{
+    opacity: 0.70;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+div#imageheading h1{
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    font:400 2.25rem serif;
+    /* font:400 36px serif; */
+    margin-left:30px;
+    color:#57585c;
+}
+#aboutsection{
+    border-bottom: solid 2px #EEE;
+    padding-top:74px;
+    padding-bottom:100px;
+    height: opx;
+    overflow: auto;
+    /* margin-left:100px;
+    margin-right:90px; */
+}
+img#tablesetting2{
+    float:left;
+    opacity: 0.6;
+    width:45%;
+    margin-right:10px;
+    
+}
+div#aboutcontent{
+     width:50%; 
+    float:right;
+
+}
+div#aboutcontent h1{
+    text-align: center;
+    /* font:400 36px serif; */
+    font:400 2.25rem serif;
+}
+div#aboutcontent h4{
+    text-align: center;
+    /* font:400 18px serif; */
+    font:400 1.125rem serif;
+}
+div#aboutcontent p:first{
+    /* font:400 18px "Times New Roman", Georgia, serif; */
+    font:400 1.125rem "Times New Roman", Georgia, serif;
+    /* line-height: 27px; */
+    line-height: 1.5rem;
+}
+div#aboutcontent p:nth-of-type(2){
+    /* font:400 18px "Times New Roman", Georgia, serif; */
+    font:400 1.125rem "Times New Roman", Georgia, serif;
+    color:#757575;
+}
+div#menuitems{
+    float:left;
+    width:45%;
+}
+img#tablesetting{
+    float:right;
+    width:50%;
+}
+#menusection{
+    clear: both;
+    border-bottom: solid 2px #EEE;
+        padding-top:74px;
+        padding-bottom: 30px;
+        height: opx;
+        overflow: auto;
+            
+}
+#menuitems div{
+    margin-bottom: 60px;
+}
+div#menuitems{
+    margin:20px;
+}
+div#menuitems h1{
+    padding:20px;
+    text-align: center;
+    /* font:400 36px serif; */
+    font:400 2.25rem serif;
+}
+div#menuitems h4{
+    /* font:400 20px serif; */
+    font:400 1.25rem serif;
+}
+div#menuitems p{
+    /* font:400 15px "Times New Roman"; */
+    font:400 0.9375rem "Times New Roman";
+    color: #757575;
+}
+#contact{
+    clear: both;
+    padding-top:60px;
+    padding-bottom:60px;
+}
+#contact p{
+    /* font:400 15px "Times New Roman"; */
+    font:400 0.9375rem "Times New Roman";
+    margin-bottom: 20px;
+}
+#contact p:nth-of-type(2){
+    /* font:700 18px "Times New Roman"; */
+    font:700 1.25rem "Times New Roman";
+    color: #607d8b;
+}
+#contact h2{
+    /* font:400 36px serif; */
+    font:400 2.25rem serif;
+    margin-bottom:60px;
+}
+div#contactform .datainput{
+    padding:15px;
+        width:100%;
+        display:block;
+        border: 0px;
+        border-bottom: solid 1px #9c9c9c;
+
+}
+div#contactform input[type=submit]{
+    border:0px;
+    margin-top:20px;
+    padding:10px;
+    /* font:400 15px "Times New Roman"; */
+    font:400 0.9375rem "Times New Roman";
+    text-transform: uppercase;
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+div#contactform input[type=submit]:hover{
+background-color: #ccc;
+}
+footer{
+    width:100%;
+    height:100px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+footer p{
+    /* font:400 15px "Times New Roman"; */
+    font:400 0.9375rem "Times New Roman";
+    line-height: 6.6rem;
+    /* line-height: 100px; */
+}
+footer a{
+    color:black;
+}
+div#usermessage{
+    text-align: center;
+    /* font-size:26px; */
+    font-size:1.625rem;
+}
+/* Media queries */
+
+@media (min-width:768px) and (max-width:1200px){
+	
+	div#imageheading{
+		 position:relative;
+	 }
+	 
+    div#imageheading h1{
+		position:absolute;
+		left:10px;
+        bottom:10px;
+    }
+    
+    #aboutsection{
+        margin-left: 10px;
+        margin-right:10px;
+        padding-bottom:10px;
+        padding-top:10px;
+    
+    }
+    div#aboutcontent{
+        float: none;
+        width:100%;
+       
+    }
+       #menusection{
+        margin-left: 10px;
+        margin-right:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    #menuitems div{
+        margin-bottom: 0px;
+    }
+   
+    div#menuitems{
+        margin:0px;
+    }
+    #contact{
+        padding:0px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    #contact h2{
+        margin-bottom:5px;
+    }
+    div#contactform input[type=submit]{
+               margin:0px;
+    }
+    
+}
+
+@media (min-width:320px) and (max-width:767px){
+   nav ul{
+       margin:0px;
+       padding:0px;
+
+    }
+        nav ul li{
+            float:none;
+            margin-bottom:10px;
+    }
+    header nav{
+        float:left;
+        clear:both;
+        margin-left:10px;
+        margin-top:15px;
+    } 
+    div#headerfixed{
+        height:150px;
+        background-color:#f1f1f1;
+    }
+    header h3{
+       margin-bottom: 5px;
+        /* font-size: 20px; */
+        font-size: 1.25rem;
+    font-weight: 500;
+    padding: 5px;
+    margin-left: 10px;
+    line-height: 0px;
+    }
+    header img{
+        margin-top:150px;
+    }
+	 div#imageheading{
+		 position:relative;
+	 }
+	 
+    div#imageheading h1{
+		position:absolute;
+		left:10px;
+        bottom:10px;
+        /* font:400 20px serif; */
+        font:400 1.25rem serif;
+    }
+    image#tablesetting2,img#tablesetting{
+        float:none;
+        width:100%;
+        
+    }
+   
+    div#aboutcontent,#menuitems{
+        float:none;
+        width:100%;
+        clear: both;
+    }
+    
+       
+}
+@media  ( min-width:1400px){
+    body{
+        font-size:32px;
+    }
+}

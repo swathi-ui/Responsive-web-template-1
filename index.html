@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Cafe Web Template</title>
+</head>
+<!-- page content -->
+<body>
+    <!-- header section -->
+    <header>
+        <div id="headerfixed">
+        <h3>Gourmet au Catering</h3>
+        <nav>
+            <ul>
+                <li><a href="#aboutsection">About</a></li>
+                <li><a href="#menusection">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        
+        <img src="images/hamburger.jpg" alt="hamburger image">
+        <div id="imageheading">
+           <h1> Le Catering</h1>
+        </div>
+       
+        </header>
+        <!-- End header-->
+
+        <!-- About Section -->
+     <section id="aboutsection">
+         <div class="container">
+         <img id="tablesetting2" src="images/tablesetting2.jpg" alt="tablesetting image">
+         <div id="aboutcontent">
+             <h1>About Catering</h1>
+             <h4>Tradition since 1889</h4>
+             <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         </div>
+         </div>
+     </section>  
+     <!-- End AboutSection -->
+
+     <!-- Menu Section -->
+     <section id="menusection">
+         <div class="container">
+         <div id="menuitems">
+                <h1>Our Menu</h1>
+                <div id="menuitem1">
+                    <h4>Bread Basket</h4>
+                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                </div>
+                <div id="menuitem2">
+                        <h4>Honey Almond Granola with Fruits</h4>
+                        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    </div>
+                    <div id="menuitem3">
+                            <h4>Belgian Waffle</h4>
+                            <p>Vanilla flavored batter with malted flour 7.50</p>
+                        </div>
+                        <div id="menuitem4">
+                                <h4>Scrambled eggs</h4>
+                                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+                                </p>
+                            </div>
+                            <div id="menuitem5">
+                                    <h4>Blueberry Pancakes</h4>
+                                    <p>With syrup, butter and lots of berries 8.50</p>
+                                </div>
+         </div>
+         <img src="images/tablesetting.jpg" id="tablesetting"alt="tablesetting image">
+        </div>
+     </section> 
+     <!-- End MenuSection -->
+
+     <!-- Contact Section -->
+     <section id="contact">
+         <div class="container">
+         <h2>Contact</h2>
+         <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+         <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
+         <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+         <div id="contactform">
+             <form>
+             <input type="text" id="txtname" class="datainput" required placeholder="Name"><br>
+             <input type="number" id="txtpeople"  class="datainput" required placeholder="How Many People"><br>
+             <input type="datetime-local"   class="datainput"  class="datainput" id="txtdate" required value="2017-11-16T20:00" ><br>
+             <input type="text" id="txtmessage"  class="datainput" required placeholder="message special requirements"><br>
+             </form>
+             <input type="submit" onclick="saveData()" value="send message"/>
+        </div> 
+        <div id="usermessage"></div>
+        </div>
+     </section>
+     <!-- End ContactSection -->
+
+     <!-- Footer -->
+<footer>
+    <p>Powered by <a href="https://www.w3schools.com" target="_blank">w3.css</a></p>
+</footer>
+<!-- End Footer -->
+<script>
+    function saveData(){
+       
+            var contactform=document.getElementById("contactform");    
+             var name=document.getElementById("txtname").value;
+             var people=document.getElementById("txtpeople").value;
+             var date=document.getElementById("txtdate").value;
+             var message=document.getElementById("txtmessage").value;
+             if(name.length!==0 && date.length!==0 && message.length!==0 && people.length!==0){
+            
+                 contactform.style.display="none";
+                 document.getElementById("usermessage").innerHTML="<b>Thank You.Your Order has been placed.</b>";
+
+             }
+
+    }
+</script> 
+</body>
+</html>
